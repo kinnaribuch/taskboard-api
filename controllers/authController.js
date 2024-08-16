@@ -1,33 +1,20 @@
-import express from 'express';
 import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
-const router = express.Router();
+const dataPath = "./data/users.json";
 
-// Resolve __dirname for ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Path to the JSON file where users will be stored
-const usersFilePath = path.join(__dirname, '../users.json');
-
-// Helper function to read users from the JSON file
+// Function to read users from the JSON file
 const readUsers = () => {
-  if (!fs.existsSync(usersFilePath)) {
-    fs.writeFileSync(usersFilePath, JSON.stringify([]));
-  }
-  const users = fs.readFileSync(usersFilePath, 'utf-8');
+  const users = fs.readFileSync(dataPath);
   return JSON.parse(users);
 };
 
-// Helper function to write users to the JSON file
+// Function to write users to the JSON file
 const writeUsers = (users) => {
-  fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+  fs.writeFileSync(dataPath, JSON.stringify(users, null, 2));
 };
 
-// Signup route
-router.post('/signup', (req, res) => {
+// Controller for signup
+export const signupUser = (req, res) => {
   const { username, email, password } = req.body;
   const users = readUsers();
 
@@ -41,10 +28,10 @@ router.post('/signup', (req, res) => {
   writeUsers(users);
 
   res.status(201).json({ message: 'User created successfully' });
-});
+};
 
-// Login route
-router.post('/login', (req, res) => {
+// Controller for login
+export const loginUser = (req, res) => {
   const { username, password } = req.body;
   const users = readUsers();
 
@@ -54,6 +41,4 @@ router.post('/login', (req, res) => {
   }
 
   res.status(200).json({ message: 'Login successful', success: true });
-});
-
-export default router;
+};

@@ -1,9 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import authRoutes from './routes/auth.js';
-// import taskRoutes from './routes/tasks.js';
-import listRoutes from './routes/lists.js';
-import boardRoutes from './routes/boards.js';  // Import the board routes
+import authRoutes from './routes/authRouter.js';
+import listRoutes from './routes/listsRouter.js';
+import boardRoutes from './routes/boardsRouter.js';  // Import the board routes
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,9 +12,6 @@ app.use(express.json());
 
 // Use the auth routes
 app.use('/api', authRoutes);
-
-// Use the task routes
-// app.use('/api', taskRoutes);
 
 // Use the board routes
 app.use('/api', boardRoutes);

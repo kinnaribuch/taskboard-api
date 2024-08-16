@@ -1,0 +1,23 @@
+{
+  "active": 0,
+  "boards": [
+    {
+      "id": "1723822217820",
+      "name": "test",
+      "bgcolor": "#bc3838",
+      "list": [
+        {
+          "id": "1723822236672",
+          "title": "new web",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "1723822224236",
+      "name": "new ",
+      "bgcolor": "#46388a",
+      "list": []
+    }
+  ]
+}
