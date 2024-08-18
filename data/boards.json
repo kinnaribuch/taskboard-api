@@ -3,179 +3,146 @@
     "1723660893612": {
       "boards": [
         {
-          "name": "Mahadev",
-          "bgcolor": "#2c62ce",
+          "name": "Instock",
+          "bgcolor": "#1e73eb",
           "list": [
             {
-              "id": "1723942968758",
-              "title": "test",
+              "id": "1723943852567",
+              "title": "To Do",
               "tasks": [
                 {
-                  "id": "1723942977719",
-                  "title": "test1",
-                  "description": "",
-                  "assignee": ""
-                },
+                  "id": "1723943926267",
+                  "title": "Development",
+                  "description": "Develop the design",
+                  "assignee": "kinnari"
+                }
+              ]
+            },
+            {
+              "id": "1723943858541",
+              "title": "In Progress",
+              "tasks": [
                 {
-                  "id": "1723942986013",
-                  "title": "test234445",
-                  "description": "test",
+                  "id": "1723943868549",
+                  "title": "Design",
+                  "description": "Started working on Design Phase of SDLC",
+                  "assignee": "kinnari"
+                }
+              ]
+            },
+            {
+              "id": "1723943861732",
+              "title": "Done",
+              "tasks": [
+                {
+                  "id": "1723943865991",
+                  "title": "Planning",
+                  "description": "Most important phase of SDLC",
                   "assignee": "kinnari"
                 }
               ]
             }
           ],
-          "id": "1723942847238",
+          "id": "1723943828222",
           "userId": 1723660893612
         },
         {
-          "name": "Shree Ganpati",
-          "bgcolor": "#bf5f2b",
-          "list": [
-            {
-              "id": "1723943467552",
-              "title": "test",
-              "tasks": []
-            }
-          ],
-          "id": "1723942859673",
-          "userId": 1723660893612
-        }
-      ]
-    },
-    "1723764882234": {
-      "boards": [
+          "name": "BrainFlix",
+          "bgcolor": "#58a130",
+          "list": [],
+          "id": "1723943836091"
+        },
         {
-          "id": "1723862183143",
           "name": "BrainStation",
-          "bgcolor": "#b83fd9",
-          "list": []
-        },
-        {
-          "name": "test",
-          "bgcolor": "#1d3557",
-          "list": [],
-          "id": "1723930402027"
-        }
-      ]
-    },
-    "1723930731538": {
-      "boards": [
-        {
-          "name": "Mahadev",
-          "bgcolor": "#4280d7",
+          "bgcolor": "#411d58",
           "list": [
             {
-              "id": "1723932513181",
-              "title": "Updated List Title",
+              "id": "1723944253540",
+              "title": "List1",
               "tasks": [
                 {
-                  "id": "1723932515573",
-                  "title": "Updated Task 1 Title",
-                  "description": "Updated description for task 1",
-                  "assignee": "Assignee Name"
-                },
-                {
-                  "id": "1723932521837",
-                  "title": "Updated Task 2 Title",
-                  "description": "Updated description for task 2",
-                  "assignee": "Assignee Name"
-                }
-              ]
-            }
-          ],
-          "id": "1723932498197"
-        },
-        {
-          "name": "Hare Krishna",
-          "bgcolor": "#c94040",
-          "list": [],
-          "id": "1723932507339"
-        },
-        {
-          "name": "Ganpati bapa",
-          "bgcolor": "#30bb6c",
-          "list": [
-            {
-              "id": "1723932513181",
-              "title": "Updated List Title",
-              "tasks": [
-                {
-                  "id": "1723932515573",
-                  "title": "Updated Task 1 Title",
-                  "description": "Updated description for task 1",
-                  "assignee": "Assignee Name"
-                },
-                {
-                  "id": "1723932521837",
-                  "title": "Updated Task 2 Title",
-                  "description": "Updated description for task 2",
-                  "assignee": "Assignee Name"
+                  "id": "1723944259463",
+                  "title": "Card1",
+                  "description": "",
+                  "assignee": ""
                 }
               ]
             },
             {
-              "id": "1723932253518",
-              "title": "Another List Title",
-              "tasks": []
-            }
-          ],
-          "id": "1723932967699",
-          "userId": "1723930731538"
-        }
-      ]
-    },
-    "1723943066337": {
-      "boards": [
-        {
-          "name": "Ganpati Bapa",
-          "bgcolor": "#ea2a33",
-          "list": [],
-          "id": "1723943099725"
-        },
-        {
-          "name": "Hare Krishna",
-          "bgcolor": "#1d3557",
-          "list": [],
-          "id": "1723943104489"
-        },
-        {
-          "name": "Har Har Mahadev",
-          "bgcolor": "#2c6dc9",
-          "list": [
-            {
-              "id": "1723943129233",
-              "title": "My Strength",
+              "id": "1723944256874",
+              "title": "List2",
               "tasks": [
                 {
-                  "id": "1723943146569",
-                  "title": "Thanks for everything",
+                  "id": "1723944265956",
+                  "title": "Card1",
                   "description": "",
                   "assignee": ""
                 },
                 {
-                  "id": "1723943160832",
-                  "title": "test delete12",
-                  "description": "test",
-                  "assignee": "mahadev"
-                }
-              ]
-            },
-            {
-              "id": "1723943133127",
-              "title": "My support ",
-              "tasks": [
-                {
-                  "id": "1723943156858",
-                  "title": "Devo ke Dev",
+                  "id": "1723944261862",
+                  "title": "Card2",
                   "description": "",
                   "assignee": ""
                 }
               ]
             }
           ],
-          "id": "1723943116118",
-          "userId": 1723943066337
+          "id": "1723943843294",
+          "userId": 1723660893612
+        }
+      ]
+    },
+    "1723943996800": {
+      "boards": [
+        {
+          "name": "Travel Site",
+          "bgcolor": "#21549c",
+          "list": [
+            {
+              "id": "1723944051447",
+              "title": "To Do",
+              "tasks": [
+                {
+                  "id": "1723944066540",
+                  "title": "Planning",
+                  "description": "",
+                  "assignee": "John"
+                }
+              ]
+            },
+            {
+              "id": "1723944057540",
+              "title": "In Progress",
+              "tasks": [
+                {
+                  "id": "1723944069599",
+                  "title": "Design",
+                  "description": "Design needs to be done by John",
+                  "assignee": "John"
+                }
+              ]
+            },
+            {
+              "id": "1723944061917",
+              "title": "Done",
+              "tasks": [
+                {
+                  "id": "1723944073384",
+                  "title": "Development",
+                  "description": "",
+                  "assignee": ""
+                }
+              ]
+            }
+          ],
+          "id": "1723944029996",
+          "userId": 1723943996800
+        },
+        {
+          "name": "Coffee shop",
+          "bgcolor": "#33db47",
+          "list": [],
+          "id": "1723944041678"
         }
       ]
     }
