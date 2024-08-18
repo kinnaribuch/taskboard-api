@@ -27,27 +27,19 @@ export const createList = (req, res) => {
   const { boardId } = req.params;
   const { title, userId } = req.body; // Get userId from the body
 
-  console.log("UserId:", userId);
-  console.log("BoardId:", boardId);
-  console.log("Title:", title);
-
   if (!title) {
     return res.status(400).json({ message: 'List title is required.' });
   }
 
   const data = readData();
 
-  console.log("Data from file:", data);
-
   const userBoards = data.users[userId]?.boards;
   if (!userBoards) {
-    console.log("User or boards not found.");
     return res.status(404).json({ message: 'User or boards not found.' });
   }
 
   const board = userBoards.find((b) => b.id === boardId);
   if (!board) {
-    console.log("Board not found.");
     return res.status(404).json({ message: 'Board not found.' });
   }
 
@@ -68,34 +60,24 @@ export const addCardToList = (req, res) => {
   const { boardId, listId } = req.params;  // Extract boardId and listId from URL params
   const { title, userId } = req.body;  // Extract title and userId from the request body
 
-  console.log("UserId:", userId);
-  console.log("BoardId:", boardId);
-  console.log("ListId:", listId);
-  console.log("Title:", title);
-
   if (!title) {
     return res.status(400).json({ message: 'Card title is required.' });
   }
 
   const data = readData();
 
-  console.log("Data from file:", data);
-
   const userBoards = data.users[userId]?.boards;
   if (!userBoards) {
-    console.log("User or boards not found.");
     return res.status(404).json({ message: 'User or boards not found.' });
   }
 
   const board = userBoards.find(b => b.id === boardId);
   if (!board) {
-    console.log("Board not found.");
     return res.status(404).json({ message: 'Board not found' });
   }
 
   const list = board.list.find(l => l.id === listId);
   if (!list) {
-    console.log("List not found.");
     return res.status(404).json({ message: 'List not found' });
   }
 

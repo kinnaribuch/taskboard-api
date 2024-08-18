@@ -105,7 +105,6 @@ export const deleteBoard = (req, res) => {
 
 // Update a board's list and tasks for a specific user
 export const updateBoard = (req, res) => {
-  console.log("Update Board Request:", req.params, req.body);
 
   const { userId } = req.body; // Assume userId is sent in the request body
   const { boardId } = req.params; // Keep boardId in params
@@ -113,7 +112,6 @@ export const updateBoard = (req, res) => {
   const boardsData = readBoards();
 
   if (!userId || !boardsData.users[userId]) {
-    console.log("User not found");
     return res.status(404).json({ message: 'User not found' });
   }
 
@@ -121,7 +119,6 @@ export const updateBoard = (req, res) => {
   const boardIndex = userBoards.findIndex(board => board.id === boardId);
 
   if (boardIndex === -1) {
-    console.log("Board not found");
     return res.status(404).json({ message: 'Board not found' });
   }
 
