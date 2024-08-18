@@ -1,3 +1,4 @@
+// authController.js
 import fs from 'fs';
 
 const dataPath = "./data/users.json";
@@ -25,9 +26,9 @@ export const signupUser = (req, res) => {
 
   const newUser = { id: Date.now(), username, email, password };
   users.push(newUser);
-  writeUsers(users);
+  writeUsers(users);  // Save the updated user list to the file
 
-  res.status(201).json({ message: 'User created successfully' });
+  res.status(201).json({ message: 'User created successfully', userId: newUser.id });
 };
 
 // Controller for login
@@ -40,5 +41,5 @@ export const loginUser = (req, res) => {
     return res.status(400).json({ message: 'Invalid username or password' });
   }
 
-  res.status(200).json({ message: 'Login successful', success: true });
+  res.status(200).json({ message: 'Login successful', success: true, userId: user.id, username: user.username });
 };
