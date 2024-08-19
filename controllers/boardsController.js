@@ -27,13 +27,18 @@ export const getBoards = (req, res) => {
   const { userId } = req.query; // Get the user ID from the query params
   const boardsData = readBoards();
 
-  if (!userId || !boardsData.users[userId]) {
-    return res.status(404).json({ message: 'User not found' });
+  // Ensure the user exists in the boards data
+  if (boardsData.users[userId]) {
+    const userBoards = boardsData.users[userId].boards || [];
+    
+    // Return the boards, even if the array is empty
+    return res.status(200).json({ boards: userBoards });
   }
 
-  const userBoards = boardsData.users[userId]?.boards || [];
-  res.json({ boards: userBoards });
+  // If the user is not found in the boards data (which shouldn't happen if logged in), return an empty array
+  return res.status(200).json({ boards: [] });
 };
+
 
 // Get a single board by its ID for a specific user
 export const getBoardById = (req, res) => {
@@ -103,13 +108,10 @@ export const deleteBoard = (req, res) => {
   res.status(204).send();  // No content to send back
 };
 
-// Update a board's list and tasks for a specific user
 export const updateBoard = (req, res) => {
-
-  const { userId } = req.body; // Assume userId is sent in the request body
-  const { boardId } = req.params; // Keep boardId in params
-  const updatedBoard = req.body;
-  const boardsData = readBoards();
+  const { userId, boardId } = req.params;
+  const updatedBoard = req.body; // This contains the updated board data
+  const boardsData = readBoards(); // Function to read from the boards.json file
 
   if (!userId || !boardsData.users[userId]) {
     return res.status(404).json({ message: 'User not found' });
@@ -127,7 +129,7 @@ export const updateBoard = (req, res) => {
     ...updatedBoard,
   };
 
-  writeBoards(boardsData);
-  res.status(200).json({ message: 'Board updated successfully' });
+  writeBoards(boardsData); // Function to write to the boards.json file
+  res.status(200).json({ message: 'Board updated successfully', board: userBoards[boardIndex] });
 };
 
