@@ -1,14 +1,32 @@
 [
   {
-    "id": 1723660893612,
-    "username": "kinnari",
-    "email": "kinnari@example.com",
-    "password": "password123"
+    "id": 1724099055628,
+    "username": "John Smith",
+    "email": "jsmith@techinnovators.com",
+    "password": "Abcd1234"
   },
   {
-    "id": 1723943996800,
-    "username": "John",
-    "email": "john@email.com",
-    "password": "john123"
+    "id": 1724099055629,
+    "username": "Michael Jones",
+    "email": "mjones@techinnovators.com",
+    "password": "Front123"
+  },
+  {
+    "id": 1724099055630,
+    "username": "Amelia Harris",
+    "email": "amelia.harris@techinnovators.com",
+    "password": "Back1234"
+  },
+  {
+    "id": 1724099055631,
+    "username": "Tina Kumar",
+    "email": "tina.kumar@techinnovators.com",
+    "password": "Desi1234"
+  },
+  {
+    "id": 1724099055632,
+    "username": "Liam Brown",
+    "email": "liam.brown@techinnovators.com",
+    "password": "QAeng123"
   }
 ]
