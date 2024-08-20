@@ -6,6 +6,7 @@ import boardRoutes from './routes/boardsRouter.js';
 import userRoutes from './routes/usersRouter.js';
 
 const app = express();
+import "dotenv/config"
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
