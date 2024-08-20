@@ -1,4 +1,3 @@
-// authController.js
 import fs from 'fs';
 
 const dataPath = "./data/users.json";

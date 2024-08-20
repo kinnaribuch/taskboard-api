@@ -3,92 +3,14 @@
     "1723660893612": {
       "boards": [
         {
-          "name": "Instock",
-          "bgcolor": "#1e73eb",
-          "list": [
-            {
-              "id": "1723943852567",
-              "title": "To Do",
-              "tasks": [
-                {
-                  "id": "1723943926267",
-                  "title": "Development",
-                  "description": "Develop the design",
-                  "assignee": "kinnari"
-                }
-              ]
-            },
-            {
-              "id": "1723943858541",
-              "title": "In Progress",
-              "tasks": [
-                {
-                  "id": "1723943868549",
-                  "title": "Design",
-                  "description": "Started working on Design Phase of SDLC",
-                  "assignee": "kinnari"
-                }
-              ]
-            },
-            {
-              "id": "1723943861732",
-              "title": "Done",
-              "tasks": [
-                {
-                  "id": "1723943865991",
-                  "title": "Planning",
-                  "description": "Most important phase of SDLC",
-                  "assignee": "kinnari"
-                }
-              ]
-            }
-          ],
-          "id": "1723943828222",
-          "userId": 1723660893612
-        },
-        {
-          "name": "BrainFlix",
-          "bgcolor": "#58a130",
+          "name": "test",
+          "bgcolor": "#1d6bd7",
           "list": [],
-          "id": "1723943836091"
-        },
-        {
-          "name": "BrainStation",
-          "bgcolor": "#411d58",
-          "list": [
-            {
-              "id": "1723944253540",
-              "title": "List1",
-              "tasks": [
-                {
-                  "id": "1723944259463",
-                  "title": "Card1",
-                  "description": "",
-                  "assignee": ""
-                }
-              ]
-            },
-            {
-              "id": "1723944256874",
-              "title": "List2",
-              "tasks": [
-                {
-                  "id": "1723944265956",
-                  "title": "Card1",
-                  "description": "",
-                  "assignee": ""
-                },
-                {
-                  "id": "1723944261862",
-                  "title": "Card2",
-                  "description": "",
-                  "assignee": ""
-                }
-              ]
-            }
-          ],
-          "id": "1723943843294",
-          "userId": 1723660893612
+          "id": "1724096567025",
+          "teamMembers": [
+            1723943996800,
+            1724083470341
+          ]
         }
       ]
     },
@@ -143,6 +65,280 @@
           "bgcolor": "#33db47",
           "list": [],
           "id": "1723944041678"
+        }
+      ]
+    },
+    "1724083470341": {
+      "boards": [
+        {
+          "name": "trdt",
+          "bgcolor": "#506d95",
+          "list": [
+            {
+              "id": "1724083515303",
+              "title": "test",
+              "tasks": [
+                {
+                  "id": "1724083516992",
+                  "title": "test1213",
+                  "description": "3dszxc",
+                  "assignee": ""
+                }
+              ]
+            }
+          ],
+          "id": "1724083480797",
+          "teamMembers": [
+            1723943996800,
+            1723660893612
+          ]
+        },
+        {
+          "name": "rsfxvc",
+          "bgcolor": "#1d3557",
+          "list": [
+            {
+              "id": "1724091072313",
+              "title": "test",
+              "tasks": [
+                {
+                  "id": "1724091074225",
+                  "title": "etst",
+                  "description": "",
+                  "assignee": ""
+                }
+              ]
+            }
+          ],
+          "id": "1724083484404"
+        }
+      ]
+    },
+    "1723866076784": {
+      "boards": [
+        {
+          "name": "Test Board",
+          "bgcolor": "#4f8de3",
+          "list": [],
+          "id": "1724091422017"
+        }
+      ]
+    },
+    "1724099055628": {
+      "boards": [
+        {
+          "name": " Website Redesign",
+          "bgcolor": "#c24438",
+          "list": [
+            {
+              "id": "1724101041864",
+              "title": "To Do",
+              "tasks": [
+                {
+                  "id": "1724101098017",
+                  "title": "Set Up Initial Repository",
+                  "description": "Backend repo needs to be initialised",
+                  "assignee": "Amelia Harris"
+                },
+                {
+                  "id": "1724101105369",
+                  "title": "Develop Home Page\n",
+                  "description": "Start developing homepage design",
+                  "assignee": "Michael Jones"
+                },
+                {
+                  "id": "1724101111417",
+                  "title": "Implement Responsive Design",
+                  "description": "Start developing homepage responsive design",
+                  "assignee": "Michael Jones"
+                }
+              ]
+            },
+            {
+              "id": "1724101051119",
+              "title": "InProgress",
+              "tasks": [
+                {
+                  "id": "1724101089801",
+                  "title": "CreateWireframes",
+                  "description": "UI Designer need to do wireframe",
+                  "assignee": "Tina Kumar"
+                }
+              ]
+            },
+            {
+              "id": "1724101055125",
+              "title": "Done",
+              "tasks": [
+                {
+                  "id": "1724101118457",
+                  "title": "Conduct User Research",
+                  "description": "Complete User Research",
+                  "assignee": "Tina Kumar"
+                }
+              ]
+            }
+          ],
+          "id": "1724100843507",
+          "teamMembers": [
+            1724099055629,
+            1724099055630,
+            1724099055631,
+            1724099055632,
+            1724103896906
+          ]
+        },
+        {
+          "name": "App Development",
+          "bgcolor": "#3e7bd0",
+          "list": [
+            {
+              "id": "1724101331384",
+              "title": "Backlog",
+              "tasks": [
+                {
+                  "id": "1724101360064",
+                  "title": "Define App Features",
+                  "description": "Project manager need to defined features",
+                  "assignee": "John Smith"
+                },
+                {
+                  "id": "1724101381913",
+                  "title": "Design User Onboarding Flow",
+                  "description": "Complete design of onboarding flow",
+                  "assignee": "Tina Kumar"
+                }
+              ]
+            },
+            {
+              "id": "1724101340952",
+              "title": "To Do",
+              "tasks": [
+                {
+                  "id": "1724101416160",
+                  "title": "Set Up Firebase for Authentication\n",
+                  "description": "Task is to set Up Firebase",
+                  "assignee": "Amelia Harris"
+                }
+              ]
+            },
+            {
+              "id": "1724101351184",
+              "title": "InProgress",
+              "tasks": [
+                {
+                  "id": "1724101526536",
+                  "title": "Develop Login Screen",
+                  "description": "",
+                  "assignee": "Michael Jones"
+                },
+                {
+                  "id": "1724101505680",
+                  "title": "Implement Push Notifications",
+                  "description": "",
+                  "assignee": "Amelia Harris"
+                }
+              ]
+            },
+            {
+              "id": "1724101537778",
+              "title": "Done",
+              "tasks": []
+            }
+          ],
+          "id": "1724100858330"
+        },
+        {
+          "name": "API Integration ",
+          "bgcolor": "#20b2aa",
+          "list": [
+            {
+              "id": "1724101558657",
+              "title": "To Do",
+              "tasks": [
+                {
+                  "id": "1724101577049",
+                  "title": "Research API Documentation",
+                  "description": "",
+                  "assignee": "Liam Brown"
+                },
+                {
+                  "id": "1724101582920",
+                  "title": "Set Up API Gateway",
+                  "description": "",
+                  "assignee": "Amelia Harris"
+                }
+              ]
+            },
+            {
+              "id": "1724101563712",
+              "title": "In Progress",
+              "tasks": [
+                {
+                  "id": "1724101588768",
+                  "title": "Develop API Endpoints for Payment Processing",
+                  "description": "",
+                  "assignee": "Amelia Harris"
+                },
+                {
+                  "id": "1724101598433",
+                  "title": "Test API Security",
+                  "description": "",
+                  "assignee": "Liam Brown"
+                }
+              ]
+            },
+            {
+              "id": "1724101569752",
+              "title": "Done",
+              "tasks": [
+                {
+                  "id": "1724101603624",
+                  "title": "Integrate Google Maps API",
+                  "description": "",
+                  "assignee": "Amelia Harris"
+                }
+              ]
+            }
+          ],
+          "id": "1724100931707",
+          "teamMembers": [
+            1724099055629,
+            1724099055631,
+            1724103886579
+          ]
+        }
+      ]
+    },
+    "1724099055631": {
+      "boards": []
+    },
+    "1724102491702": {
+      "boards": []
+    },
+    "1724103896906": {
+      "boards": [
+        {
+          "name": "test",
+          "bgcolor": "#266ccf",
+          "list": [
+            {
+              "id": "1724104029810",
+              "title": "test",
+              "tasks": [
+                {
+                  "id": "1724104035466",
+                  "title": "test",
+                  "description": "",
+                  "assignee": ""
+                }
+              ]
+            }
+          ],
+          "id": "1724104022874",
+          "teamMembers": [
+            1724099055628
+          ]
         }
       ]
     }
